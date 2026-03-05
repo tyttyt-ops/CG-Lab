@@ -39,6 +39,9 @@ python src/Work0/main.py
 - 粒子边界碰撞检测：粒子碰到边界会反弹
 - 实时渲染：使用Taichi的GUI模块实时渲染粒子
 
+#### 效果
+![v10cO8zT_converted](https://github.com/user-attachments/assets/e2191270-6e08-4cda-82b0-f62ee441a821)
+
 #### 实现原理
 1. **数据结构**：使用Taichi的`Vector.field`在显存中存储粒子的位置和速度
 2. **物理计算**：使用Taichi的`@ti.kernel`装饰器实现并行计算
@@ -88,3 +91,4 @@ python src/Work0/main.py
 
 
 系统实验
+
