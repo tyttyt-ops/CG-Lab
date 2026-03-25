@@ -1,4 +1,3 @@
-
 ## 环境要求
 
 - **Python**：3.12+
@@ -28,6 +27,24 @@ python src/Work0/main.py
 ```
 
 运行后会弹出一个窗口，显示粒子系统。你可以在窗口中移动鼠标，粒子会受到鼠标的引力影响。
+
+## 项目结构
+
+```
+CG-Lab/
+├── src/
+│   └── Work0/           # 实验 0：Taichi Gravity Swarm
+│       ├── __init__.py
+│       ├── config.py     # 配置参数
+│       ├── main.py       # 主程序
+│       └── physics.py    # 物理计算
+├── .gitignore
+├── .python-version
+├── README.md
+├── pyproject.toml       # 项目配置和依赖
+├── tesst.py
+└── uv.lock
+```
 
 ## 实验说明
 
@@ -89,6 +106,16 @@ python src/Work0/main.py
 - 添加适当的注释和文档字符串
 - 使用有意义的变量和函数名
 
+## 注意事项
 
-系统实验
+- 首次运行时，Taichi 会编译 GPU 内核，可能需要一些时间
+- 确保您的 GPU 支持 Taichi（大多数现代 GPU 都支持）
+- 如果遇到性能问题，可以尝试减少粒子数量或使用 CPU 后端
 
+## 许可证
+
+本项目采用 MIT 许可证。
+
+## 联系方式
+
+如有问题或建议，请联系项目维护者
